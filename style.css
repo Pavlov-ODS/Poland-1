@@ -753,7 +753,7 @@ a:hover {
 .contact-container {
     display: flex;
     align-items: flex-start; /* Выровнять верхние части блоков */
-    gap: 40px;
+    gap: 110px;
     justify-content: center;
     max-width: 1000px; /* Совпадает с шириной FAQ */
     margin: 0 auto;
@@ -791,7 +791,7 @@ a:hover {
 .contact-form-block {
     flex: 1 1 450px;
     max-width: 450px;
-    background: #f5f5f5; /* Светло-серый фон */
+    background: #e5e5e5; /* Более темный серый фон */
     border-radius: 14px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Тень */
     padding: 30px;
@@ -892,12 +892,11 @@ a:hover {
 
 /* --- Footer --- */
 .footer {
-    background: #eeeeee;
+    background: #e5e5e5; /* Такой же цвет, как у формы */
     color: #553c2d;
     padding: 25px 20px;
     text-align: center;
     font-size: 14px;
-    
 }
 .footer-container span {
     /* font-family: 'AtypText', Arial, sans-serif; - Задано выше */
