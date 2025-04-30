@@ -696,36 +696,50 @@ a:hover {
 
 /* --- FAQ section --- */
 .faq-section {
-    background: #f2ded3;
-    padding: 60px 20px;
+    background: #f2ded3; /* Светло-бежевый фон */
+    padding: 40px 20px;
 }
-.faq-section h2 {
-    /* font-size: 28px; - Наследуется */
-    /* font-weight: 700; - Задано выше */
-    /* text-transform: uppercase; - Наследуется */
-    text-align: center;
-    margin-bottom: 40px;
-    color: #222;
-}
-.faq-list {
-    max-width: 800px;
+
+.faq-container {
+    max-width: 1000px; /* Увеличиваем ширину контейнера */
     margin: 0 auto;
 }
-.faq-item {
-    font-size: 16px;
-    margin-bottom: 20px;
-    background: #fff;
-    padding: 15px 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    line-height: 1.6;
-}
-.faq-item b {
-    /* font-weight: 700; - Задано выше */
-    display: block;
-    margin-bottom: 8px;
+
+.faq-section h2 {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
     color: #222;
-    font-size: 17px;
+    margin-top: 0px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Уменьшено расстояние между вопросами */
+}
+
+.faq-item {
+    font-family: 'AtypText', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1; /* Межстрочный интервал */
+    color: #333;
+    text-align: justify; /* Выравниваем текст по ширине */
+}
+
+.faq-item b {
+    font-weight: 700; /* Жирный текст для вопросов */
+    color: #222;
+    display: block;
+    margin-bottom: 0; /* Убираем расстояние между вопросом и ответом */
+    text-align: left; /* Оставляем вопросы выровненными по левому краю */
+}
+.faq-item p {
+    margin-top: 3px; /* Устанавливаем минимальный отступ сверху */
+    margin-bottom: 3; /* Убираем нижний отступ, если он есть */
 }
 
 /* --- Contact section (form) --- */
