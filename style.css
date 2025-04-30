@@ -737,10 +737,6 @@ a:hover {
     margin-bottom: 0; /* Убираем расстояние между вопросом и ответом */
     text-align: left; /* Оставляем вопросы выровненными по левому краю */
 }
-.faq-item p {
-    margin-top: 3px; /* Устанавливаем минимальный отступ сверху */
-    margin-bottom: 3; /* Убираем нижний отступ, если он есть */
-}
 
 /* --- Contact section (form) --- */
 .contact-section {
@@ -750,32 +746,36 @@ a:hover {
 
 .contact-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Выровнять верхние части блоков */
     gap: 40px;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1000px; /* Совпадает с шириной FAQ */
     margin: 0 auto;
     flex-wrap: wrap;
 }
 
 .contact-img {
-    flex: 0 0 300px;
+    flex: 0 0 400px; /* Увеличиваем ширину изображения */
     text-align: center;
 }
 
 .contact-img img {
     max-width: 100%;
-    border-radius: 10px;
+    height: auto;
+   
 }
 
 .contact-text {
     font-family: 'AtypText', Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 700; /* Жирный текст */
-    line-height: 1.5;
+    font-size: 21px; /* Размер текста */
+    line-height: 1.3; /* Межстрочный интервал */
     margin-top: 15px;
     color: #333;
-    text-align: center;
+    text-align: start;
+}
+
+.contact-text strong {
+    font-weight: 700; /* Жирный текст */
 }
 
 .contact-text span {
@@ -783,12 +783,12 @@ a:hover {
 }
 
 .contact-form-block {
+    flex: 1 1 450px;
+    max-width: 450px;
     background: #f5f5f5; /* Светло-серый фон */
     border-radius: 14px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Тень */
     padding: 30px;
-    flex: 1 1 400px;
-    max-width: 450px;
 }
 
 .contact-form-block h2 {
@@ -801,10 +801,14 @@ a:hover {
 }
 
 .contact-form-block p {
-    font-size: 14px;
+    font-family: 'AtypText', Arial, sans-serif;
+    font-size: 13px; /* Уменьшаем размер текста */
+    font-weight: 400; /* Нормальный вес текста */
+    line-height: 1.4; /* Межстрочный интервал */
     text-align: center;
-    color: #555;
+    color: #555; /* Цвет текста */
     margin-bottom: 20px;
+    margin-top: 10px; /* Добавляем небольшой отступ сверху */
 }
 
 .contact-form {
@@ -882,12 +886,12 @@ a:hover {
 
 /* --- Footer --- */
 .footer {
-    background: #f2ded3;
+    background: #eeeeee;
     color: #553c2d;
     padding: 25px 20px;
     text-align: center;
     font-size: 14px;
-    border-top: 1px solid #e5b6a0;
+    
 }
 .footer-container span {
     /* font-family: 'AtypText', Arial, sans-serif; - Задано выше */
@@ -1061,3 +1065,13 @@ body.mobile-menu-open {
  .mobile-menu-panel .close-menu-button:hover svg {
      stroke: #d23d2c; /* Цвет иконки закрытия при наведении */
  }
+
+.contact-note {
+    font-family: 'AtypText', Arial, sans-serif;
+    font-size: 15px; /* Размер текста */
+    font-weight: 400; /* Нормальный вес текста */
+    line-height: 1; /* Межстрочный интервал */
+    text-align: start;
+    color: #555; /* Цвет текста */
+    margin-top: 50px; /* Отступ сверху */
+}
